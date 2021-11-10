@@ -10,6 +10,7 @@ import LikeButtonComponent from "./components/LikeButtonComponent";
 import ClickablePictureComponent from "./components/ClickablePictureComponent";
 import person from './assets/images/img/persons/maxence.png'
 import personWithGlass from './assets/images/img/persons/maxence-glasses.png'
+import DiceComponent from "./components/DiceComponent";
 
 
 function App() {
@@ -112,6 +113,8 @@ function App() {
         img={person}
         imgClicked={personWithGlass}
         />
+
+        <DiceComponent />
 
 
     </div>
