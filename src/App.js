@@ -6,6 +6,7 @@ import BoxColorComponent from "./components/BoxColorComponent";
 import CreditCardComponent from "./components/CreditCardComponent";
 import RatingComponent from "./components/RatingComponent";
 import DriveCardComponent from "./components/DriveCardComponent";
+import LikeButtonComponent from "./components/LikeButtonComponent";
 
 
 function App() {
@@ -100,6 +101,8 @@ function App() {
             licensePlate: "BE33ER"
           }}
         />
+
+        <LikeButtonComponent color={['purple','blue','green','yellow','orange','red']}/>
 
     </div>
   );
