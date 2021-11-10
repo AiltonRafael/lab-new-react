@@ -4,7 +4,6 @@ import { Image } from '@chakra-ui/image';
 import RatingComponent from './RatingComponent';
 
 export default function DriveCardComponent(props) {
-    console.log(props)
     return (
         <Grid
         templateColumns='repeat(2, 1fr)'
@@ -42,6 +41,7 @@ export default function DriveCardComponent(props) {
         <Box>
             <Box 
              d='flex'
+             flexDir='column'
              justifyContent='center'
              alignItems='center'
             >
@@ -49,7 +49,10 @@ export default function DriveCardComponent(props) {
                     {props.name}
                 </Text>
 
-                <RatingComponent />
+                <RatingComponent> 
+                    {props.rating} 
+                </RatingComponent>
+                
             </Box>
 
             <Box
