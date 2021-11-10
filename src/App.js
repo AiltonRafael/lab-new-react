@@ -12,7 +12,9 @@ import person from './assets/images/img/persons/maxence.png'
 import personWithGlass from './assets/images/img/persons/maxence-glasses.png'
 import DiceComponent from "./components/DiceComponent";
 import CarouselComponent from "./components/CarouselComponent";
-
+import NumberTableComponent from "./components/NumberTableComponent";
+import FacebookComponent from "./components/FacebookComponent";
+import { dataArr } from "./data/berlin.jsx";
 
 function App() {
   return (
@@ -130,6 +132,10 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
         />
+
+        <NumberTableComponent limit={12}/>
+
+        <FacebookComponent data={dataArr}/>
 
 
     </Box>

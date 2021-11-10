@@ -5,7 +5,6 @@ import { Button } from '@chakra-ui/button';
 import { ArrowRightIcon, ArrowLeftIcon } from '@chakra-ui/icons';
 
 export default function CarouselComponent(props) {
-    console.log(props)
     const [index, setIndex] = useState(0)
     function handleClick(arrowDirection){
         if(arrowDirection === 'arrowLeft'){
@@ -19,7 +18,6 @@ export default function CarouselComponent(props) {
         }
     }
 
-    console.log(props)
     return (
         <Box 
         d='flex'
