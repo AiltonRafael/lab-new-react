@@ -15,6 +15,7 @@ import CarouselComponent from "./components/CarouselComponent";
 import NumberTableComponent from "./components/NumberTableComponent";
 import FacebookComponent from "./components/FacebookComponent";
 import { dataArr } from "./data/berlin.jsx";
+import FormComponent from "./components/FormComponent";
 
 function App() {
   return (
@@ -136,6 +137,8 @@ function App() {
         <NumberTableComponent limit={12}/>
 
         <FacebookComponent data={dataArr}/>
+
+        <FormComponent />
 
 
     </Box>
