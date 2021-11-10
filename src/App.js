@@ -1,4 +1,4 @@
-import { Grid } from "@chakra-ui/layout";
+import { Grid, Box } from "@chakra-ui/layout";
 import CardComponents from "./components/CardComponents";
 import GreetingsComponent from "./components/GreetingsComponent";
 import RandomComponent from "./components/RandomComponent";
@@ -11,11 +11,17 @@ import ClickablePictureComponent from "./components/ClickablePictureComponent";
 import person from './assets/images/img/persons/maxence.png'
 import personWithGlass from './assets/images/img/persons/maxence-glasses.png'
 import DiceComponent from "./components/DiceComponent";
+import CarouselComponent from "./components/CarouselComponent";
 
 
 function App() {
   return (
-    <div>
+    <Box
+    d='flex'
+    flexDirection='column'
+    justifyContent='center'
+    alignItems='center'
+    >
         <CardComponents 
           lastName='Doe'
           firstName='John'
@@ -116,8 +122,17 @@ function App() {
 
         <DiceComponent />
 
+        <CarouselComponent 
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+        />
 
-    </div>
+
+    </Box>
   );
 }
 

@@ -25,7 +25,7 @@ export default function DiceComponent() {
         <Box
         w='100px'
         >
-            <img 
+            <Image 
             src={randomIndexArrDice}
             alt='dice'
             onClick={getRandomSideOfDice}

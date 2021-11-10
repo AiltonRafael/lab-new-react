@@ -13,13 +13,13 @@ export const theme = extendTheme({
     styles: {
       global: {
         "html": {
-            height: "100vh"
+            height: "100vh",
         },
         "body": {
           height: "100%",
           d: 'flex',
           justifyContent: 'center',
-          alignItem: 'center'
+          alignItem: 'center',
         },
       },
     },
