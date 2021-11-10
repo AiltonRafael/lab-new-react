@@ -1,16 +1,31 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faStar} from '@fortawesome/free-solid-svg-icons';
+import { Box } from '@chakra-ui/layout';
 
 export default function RatingComponent(props) {
    let rating = Math.floor(props.children)
-    
-   if(rating === 1 ){
-        return <FontAwesomeIcon icon={faStar}/>
-   } else if(rating === 2) {
-    return (<FontAwesomeIcon icon={faStar}/>, <FontAwesomeIcon icon={faStar}/>)
+   
+   switch (rating) {
+     case 0:
+          return <Box> ☆☆☆☆☆ </Box>;
+          break;
+     case 1:
+          return <Box> ★☆☆☆☆ </Box>;
+          break;
+     case 2: 
+          return <Box> ★★☆☆☆ </Box>;
+          break;
+     case 3:
+          return <Box> ★★★☆☆ </Box>;
+          break;
+     case 4:
+          return <Box> ★★★★☆ </Box>;
+          break;
+     case 5:
+          return <Box> ★★★★★ </Box>;
+          break;
+     default: 
+          return 0
+          
    }
-
-    return <FontAwesomeIcon icon={faStar}/>
     
 }
