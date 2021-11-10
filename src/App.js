@@ -7,6 +7,9 @@ import CreditCardComponent from "./components/CreditCardComponent";
 import RatingComponent from "./components/RatingComponent";
 import DriveCardComponent from "./components/DriveCardComponent";
 import LikeButtonComponent from "./components/LikeButtonComponent";
+import ClickablePictureComponent from "./components/ClickablePictureComponent";
+import person from './assets/images/img/persons/maxence.png'
+import personWithGlass from './assets/images/img/persons/maxence-glasses.png'
 
 
 function App() {
@@ -104,6 +107,11 @@ function App() {
 
         <LikeButtonComponent color={['purple','blue','green','yellow','orange','red']}/>
         <LikeButtonComponent color={['purple','blue','green','yellow','orange','red']}/>
+
+        <ClickablePictureComponent 
+        img={person}
+        imgClicked={personWithGlass}
+        />
 
 
     </div>

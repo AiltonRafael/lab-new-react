@@ -3,7 +3,6 @@ import { Button } from '@chakra-ui/button';
 import { useState } from 'react';
 
 export default function LikeButtonComponent(props) {
-    console.log(props.color.length)
     const [like, setLikes] = useState(0);
     const [indexColorArr, setIndexColor] = useState(0) 
 
@@ -13,7 +12,6 @@ export default function LikeButtonComponent(props) {
             setIndexColor(0)
         } else {setIndexColor(indexColorArr + 1)}
 
-        console.log(indexColorArr)
     }
 
     return (
