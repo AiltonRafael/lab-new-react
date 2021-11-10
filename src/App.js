@@ -103,6 +103,8 @@ function App() {
         />
 
         <LikeButtonComponent color={['purple','blue','green','yellow','orange','red']}/>
+        <LikeButtonComponent color={['purple','blue','green','yellow','orange','red']}/>
+
 
     </div>
   );
