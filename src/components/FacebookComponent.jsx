@@ -91,7 +91,7 @@ export default function FacebookComponent(props) {
                         </Text>
         
                         <Text>
-                            <strong> Type: </strong> {element.isStudent ? 'Yes': 'No'}
+                            <strong> Type: </strong> {element.isStudent ? 'Student': 'Teacher'}
                         </Text>
                     </Box>
                 </Box>
