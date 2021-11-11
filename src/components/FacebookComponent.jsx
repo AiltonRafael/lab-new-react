@@ -4,7 +4,6 @@ import { Image } from '@chakra-ui/image';
 import { Button } from '@chakra-ui/button';
 
 export default function FacebookComponent(props) {
-    const [isToggle, setIsToggle] = useState(true)
     const [selectCountry, setSelectCountry] = useState('')
 
     let arrCountry = [];
