@@ -24,6 +24,7 @@ export default function DiceComponent() {
     return (
         <Box
         w='100px'
+        mt='10px'
         >
             <Image 
             src={randomIndexArrDice}

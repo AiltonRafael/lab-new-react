@@ -16,8 +16,7 @@ export default function FacebookComponent(props) {
     sortedArrCountry = [...new Set(arrCountry)]
 
     function handleSort(country){
-        setIsToggle(!isToggle)
-        console.log(`${country}, ${isToggle}`)
+            setIsToggle(!isToggle)
     }
 
     return (
@@ -56,7 +55,7 @@ export default function FacebookComponent(props) {
                 justifyContent='space-around'
                 mt='10px'
                 className={element.country}
-                bg={isToggle ? '#ffffff': '#a3d2e2'}
+                bg={isToggle && element.country ? '#ffffff': '#a3d2e2'}
                 >
                     <Box 
                     justifyContent='center' 
