@@ -6,6 +6,7 @@ import { ArrowRightIcon, ArrowLeftIcon } from '@chakra-ui/icons';
 
 export default function CarouselComponent(props) {
     const [index, setIndex] = useState(0)
+    
     function handleClick(arrowDirection){
         if(arrowDirection === 'arrowLeft'){
             if(index < props.imgs.length && index > 0){ 
