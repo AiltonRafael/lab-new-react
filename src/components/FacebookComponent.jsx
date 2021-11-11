@@ -33,6 +33,7 @@ export default function FacebookComponent(props) {
                     w='100px'
                     ml='10px'
                     id={country}
+                    key={country}
                     onClick={() => handleSort(country)}
                     >
                         {country}
@@ -42,7 +43,7 @@ export default function FacebookComponent(props) {
                 
             </Box>
         
-            {props.data.map((element) => {
+            {props.data.map((element, index) => {
                 return(
                 <Box 
                 w='50vh' 
@@ -55,6 +56,7 @@ export default function FacebookComponent(props) {
                 justifyContent='space-around'
                 mt='10px'
                 className={element.country}
+                key={index}
                 bg={isToggle ? '#ffffff': '#a3d2e2'}
                 >
                     <Box 

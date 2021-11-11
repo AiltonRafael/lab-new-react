@@ -2,15 +2,11 @@ import React from 'react';
 import { Box, Grid } from '@chakra-ui/layout';
 
 export default function NumberTableComponent(props) {
-    console.log(props)
     let arr = [];
 
     for(let i = 1; i <= props.limit; i++){
         arr.push(i)
     };
-
-    {console.log(arr)}
-
 
 
     return (
