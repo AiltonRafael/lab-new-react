@@ -22,7 +22,13 @@ export default function NumberTableComponent(props) {
         textAlign='center'
         > 
             {arr.map((element)=> {
-                return <Box w='100%' bg={element % 2 === 0 ? 'white' : 'red'} key={element}> {element} </Box>
+                return <Box
+                border='1px'
+                w='100%' 
+                bg={element % 2 === 0 ? 'white' : 'red'} 
+                key={element}> 
+                    {element} 
+                </Box>
             })}
         </Box>
     )
