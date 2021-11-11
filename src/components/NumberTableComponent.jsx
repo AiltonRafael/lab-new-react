@@ -5,9 +5,12 @@ export default function NumberTableComponent(props) {
     console.log(props)
     let arr = [];
 
-    for(let i = 0; i < props.limit; i++){
-        arr.push(<Box> {i} </Box>)
+    for(let i = 1; i <= props.limit; i++){
+        arr.push(i)
     };
+
+    {console.log(arr)}
+
 
 
     return (
@@ -19,7 +22,7 @@ export default function NumberTableComponent(props) {
         textAlign='center'
         > 
             {arr.map((element)=> {
-                return <Box w='100%' bg={element%2 === 0 ? 'blue' : 'red'} key={element}> {element} </Box>
+                return <Box w='100%' bg={element % 2 === 0 ? 'white' : 'red'} key={element}> {element} </Box>
             })}
         </Box>
     )
