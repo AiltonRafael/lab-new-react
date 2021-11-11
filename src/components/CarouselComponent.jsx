@@ -25,7 +25,7 @@ export default function CarouselComponent(props) {
         justifyContent='space-betwen'
         alignItems='center'
         border='1px'
-        h='300px'
+        h='400px'
         w='20%'
         mt='10px'
         >

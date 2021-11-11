@@ -5,7 +5,6 @@ import { Button } from '@chakra-ui/button';
 
 export default function FacebookComponent(props) {
     const [bgInitialColor, setBgColor] = useState('#ffff');
-    const [className, setClassName] = useState()
 
     let arrCountry = [];
     let sortedArrCountry = [];
@@ -18,6 +17,7 @@ export default function FacebookComponent(props) {
 
     function handleSort(country){
         setBgColor('#a3d2e2')
+        console.log(country)
     }
 
     return (
