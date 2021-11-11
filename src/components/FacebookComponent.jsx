@@ -5,6 +5,7 @@ import { Button } from '@chakra-ui/button';
 
 export default function FacebookComponent(props) {
     const [isToggle, setIsToggle] = useState(true)
+    const [selectCountry, setSelectCountry] = useState('')
 
     let arrCountry = [];
     let sortedArrCountry = [];
@@ -16,8 +17,10 @@ export default function FacebookComponent(props) {
     sortedArrCountry = [...new Set(arrCountry)]
 
     function handleSort(country){
-            setIsToggle(!isToggle)
+            setSelectCountry(country)
     }
+
+    console.log(props)
 
     return (
         <div>
@@ -32,7 +35,6 @@ export default function FacebookComponent(props) {
                     <Button 
                     w='100px'
                     ml='10px'
-                    id={country}
                     key={country}
                     onClick={() => handleSort(country)}
                     >
@@ -57,7 +59,7 @@ export default function FacebookComponent(props) {
                 mt='10px'
                 className={element.country}
                 key={index}
-                bg={isToggle ? '#ffffff': '#a3d2e2'}
+                bg={element.country === selectCountry ? '#A3D2E2' : 'white'}
                 >
                     <Box 
                     justifyContent='center' 

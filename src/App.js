@@ -136,7 +136,7 @@ function App() {
 
         <NumberTableComponent limit={12}/>
 
-        <FacebookComponent data={dataArr}/>
+        <FacebookComponent data={dataArr} />
 
         <FormComponent />
 
