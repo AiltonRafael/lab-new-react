@@ -10,14 +10,11 @@ export default function FormComponent() {
 
     const [bgInputColorPassword, setBgInputColorPassword] = useState()
 
-    function handleColor(type, value){
+    function handleColor(type, emailValue){
         if(type === 'email'){
-                setBgInputColorEmail('red')
-                if(!emailValue)
-                    {
+                if(!emailValue){
                         setBgInputColorEmail('red')
-                    }
-            
+                    }  
         }
     }
     
